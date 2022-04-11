@@ -1,0 +1,19 @@
+<form method="post" name="addpost" id="addpost">
+  <div class="mb-3">
+    <label for="postTitle" class="form-label">Tytuł Posta:</label>
+    <input type="text" class="form-control" id="postTitle"
+           name="postTitle" value="" [(ngModel)]="credentials.title">
+  </div>
+  <div class="mb-3">
+    <label for="postText" class="form-label">Opis:</label>
+    <input type="text" class="form-control" id="postText"
+           name="postText" value="" [(ngModel)]="credentials.text">
+  </div>
+  <div class="mb-3">
+    <label for="imageUrl" class="form-label">Link do obrazka:</label>
+    <input type="text" class="form-control" id="imageUrl"
+           name="postImage" value="" [(ngModel)]="credentials.image">
+  </div>
+  <button (click)="sendPost()" name="Submit" type="submit" class="btn btn-primary">Wyślij
+  </button>
+</form>
